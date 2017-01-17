@@ -1,7 +1,7 @@
 // Declare the variable we want to shuffle.
 var myArray = ["1","2","3","4","5"];
 
-// Set myArray to shuffleArray(myArray).splice(). The function called returns a shuffled version of itself and .splice() returns all of it's elements and allows us to copy them.
+// Set myArray to shuffleArray(myArray).slice(). The function called returns a shuffled version of itself and .slice() returns all of it's elements and allows us to copy them.
 myArray = shuffleArray(myArray).slice();
 
 

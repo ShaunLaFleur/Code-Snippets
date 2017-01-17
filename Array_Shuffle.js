@@ -27,7 +27,7 @@ To shuffle an array just call the function like so: yourArray = shuffleArray(you
 var myArray = ["1","2","3","4","5"];
 console.log("Before shuffle: "+myArray);
 for(i=0; i<myArray.length-1; i++) {
-    var x = Math.round(Math.random()*(a.length-1 - i)+i);
+    var x = Math.round(Math.random()*(myArray.length-1 - i)+i);
     var temp = myArray[i];
     myArray[i] = myArray[x];
     myArray[x] = temp;

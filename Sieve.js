@@ -1,10 +1,11 @@
 // Javascript Sieve of Eratosthenes; https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
 var n = 1000;
-var checkList = [];
+var checkList = {};
 var results = [];
 var limit = Math.sqrt(n);
 
-// Populate the checkList array with numbers 0 up to n-1.
+// Populate the checkList array with numbers 0 up to n-1. We can optimize the script time by simply skipping this step and rather than checking if a key is false, we simply check if it is undefined.
+// In this case we could simply assume that undefined = true.
 for(i=2; i<n; i++) {
 	checkList[i] = true;
 }

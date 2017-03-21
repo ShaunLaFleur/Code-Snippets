@@ -21,7 +21,7 @@ function shuffleArray(a) {
 
 /* 
 The shuffle works as follows:
-1. Set  TEST x to a random index position between our current position(i) and the last position(a.length-1) of our array.
+1. Set x to a random index position between our current position(i) and the last position(a.length-1) of our array.
 2. We switch the value at our current position of i to the value at position x.
 3. We increase i by 1 and repeat the steps until we reach the second to last position(because the last position can only switch with itself, since the current position of i would equal to the last position of the array).
 
